@@ -16,6 +16,12 @@ int main()
 		ClearBackground(BLACK);
 
 
+		// draw the circle in the midle of window
+		DrawCircle(GetScreenWidth() / 2, GetScreenHeight() / 2, 5, WHITE);
+		// draw the players rectangle 
+		DrawRectangle(50, GetScreenHeight() / 2 - 50, 10, 100, WHITE);
+		DrawRectangle(GetScreenWidth() - (50 + 10), GetScreenHeight() / 2 - 50, 10, 100, WHITE);
+
 
 		// show the fps on the window
 		DrawFPS(0, 0);
